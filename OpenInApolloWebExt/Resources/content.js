@@ -1,7 +1,7 @@
 
 async function loadSettings() {
     return browser.storage.sync.get({
-        "beAgressive": false,
+        "beAggressive": false,
         "alwaysOpenInApollo": false
     });
 }
@@ -14,11 +14,15 @@ loadSettings().then(settings => {
     if (settings.alwaysOpenInApollo) {
         openInApollo();
     }
+    if (settings.beAggressive) {
+        checkDOMForBanner();
+    }
+    
 });
-let counter = 0;
-function checkDOMChange()
+let popupCounter = 0;
+function checkDOMForPopUp()
 {
-    counter++;
+    popupCounter++;
     // check for any new element being inserted here,
     // or a particular node being modified
     const element = document.querySelector(".XPromoPopup__actions");
@@ -33,8 +37,29 @@ function checkDOMChange()
         butt.innerText = "Open";
         butt.onclick = openInApollo;
         element.appendChild( me );
-    } else if (counter < 10000)
-        setTimeout( checkDOMChange, 300 );
+    } else if (popupCounter < 10000)
+        setTimeout( checkDOMForPopUp, 300 );
 }
-checkDOMChange();
+checkDOMForPopUp();
+
+let bannerCounter = 0;
+function checkDOMForBanner()
+{
+    bannerCounter++;
+    // check for any new element being inserted here,
+    // or a particular node being modified
+    const topButton = document.querySelector(".TopButton.TopNav__topButton.m-visible");
+    const bannerButton = document.querySelector(".XPromoPill__openButton");
+    
+    if (topButton) {
+        topButton.href = location.href.replace("https://", "apollo://");
+    }
+    if(bannerButton) {
+        bannerButton.href = location.href.replace("https://", "apollo://");
+    }
+    if (popupCounter < 10000) {
+        setTimeout( checkDOMForBanner, 1600 );
+    }
+}
+
 

@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B132D8F02688FB3800E25FC2 /* OpenInApolloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B132D8EF2688FB3800E25FC2 /* OpenInApolloApp.swift */; };
+		B132D8F22688FB3800E25FC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B132D8F12688FB3800E25FC2 /* ContentView.swift */; };
+		B132D8F42688FB3A00E25FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B132D8F32688FB3A00E25FC2 /* Assets.xcassets */; };
+		B132D8F72688FB3A00E25FC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B132D8F62688FB3A00E25FC2 /* Preview Assets.xcassets */; };
+		B132D9042688FB6300E25FC2 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B132D9032688FB6300E25FC2 /* SafariWebExtensionHandler.swift */; };
+		B132D9072688FB6300E25FC2 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = B132D9062688FB6300E25FC2 /* _locales */; };
+		B132D9092688FB6300E25FC2 /* images in Resources */ = {isa = PBXBuildFile; fileRef = B132D9082688FB6300E25FC2 /* images */; };
+		B132D90B2688FB6300E25FC2 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B132D90A2688FB6300E25FC2 /* manifest.json */; };
+		B132D90F2688FB6300E25FC2 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = B132D90E2688FB6300E25FC2 /* content.js */; };
+		B132D9112688FB6300E25FC2 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = B132D9102688FB6300E25FC2 /* popup.html */; };
+		B132D9132688FB6300E25FC2 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = B132D9122688FB6300E25FC2 /* popup.css */; };
+		B132D9152688FB6300E25FC2 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = B132D9142688FB6300E25FC2 /* popup.js */; };
+		B132D9192688FB6300E25FC2 /* OpenInApolloWebExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B132D9012688FB6300E25FC2 /* OpenInApolloWebExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B132D9172688FB6300E25FC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B132D8E42688FB3800E25FC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B132D9002688FB6300E25FC2;
+			remoteInfo = OpenInApolloWebExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B132D91D2688FB6300E25FC2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B132D9192688FB6300E25FC2 /* OpenInApolloWebExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B132D8EC2688FB3800E25FC2 /* OpenInApollo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenInApollo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B132D8EF2688FB3800E25FC2 /* OpenInApolloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInApolloApp.swift; sourceTree = "<group>"; };
+		B132D8F12688FB3800E25FC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B132D8F32688FB3A00E25FC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B132D8F62688FB3A00E25FC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B132D9012688FB6300E25FC2 /* OpenInApolloWebExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OpenInApolloWebExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B132D9032688FB6300E25FC2 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		B132D9062688FB6300E25FC2 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		B132D9082688FB6300E25FC2 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		B132D90A2688FB6300E25FC2 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		B132D90E2688FB6300E25FC2 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		B132D9102688FB6300E25FC2 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		B132D9122688FB6300E25FC2 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		B132D9142688FB6300E25FC2 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		B132D9162688FB6300E25FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B132D8E92688FB3800E25FC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B132D8FE2688FB6300E25FC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B132D8E32688FB3800E25FC2 = {
+			isa = PBXGroup;
+			children = (
+				B132D8EE2688FB3800E25FC2 /* OpenInApollo */,
+				B132D9022688FB6300E25FC2 /* OpenInApolloWebExt */,
+				B132D8ED2688FB3800E25FC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B132D8ED2688FB3800E25FC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B132D8EC2688FB3800E25FC2 /* OpenInApollo.app */,
+				B132D9012688FB6300E25FC2 /* OpenInApolloWebExt.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B132D8EE2688FB3800E25FC2 /* OpenInApollo */ = {
+			isa = PBXGroup;
+			children = (
+				B132D8EF2688FB3800E25FC2 /* OpenInApolloApp.swift */,
+				B132D8F12688FB3800E25FC2 /* ContentView.swift */,
+				B132D8F32688FB3A00E25FC2 /* Assets.xcassets */,
+				B132D8F52688FB3A00E25FC2 /* Preview Content */,
+			);
+			path = OpenInApollo;
+			sourceTree = "<group>";
+		};
+		B132D8F52688FB3A00E25FC2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B132D8F62688FB3A00E25FC2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B132D9022688FB6300E25FC2 /* OpenInApolloWebExt */ = {
+			isa = PBXGroup;
+			children = (
+				B132D9032688FB6300E25FC2 /* SafariWebExtensionHandler.swift */,
+				B132D9162688FB6300E25FC2 /* Info.plist */,
+				B132D9052688FB6300E25FC2 /* Resources */,
+			);
+			path = OpenInApolloWebExt;
+			sourceTree = "<group>";
+		};
+		B132D9052688FB6300E25FC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B132D9062688FB6300E25FC2 /* _locales */,
+				B132D9082688FB6300E25FC2 /* images */,
+				B132D90A2688FB6300E25FC2 /* manifest.json */,
+				B132D90E2688FB6300E25FC2 /* content.js */,
+				B132D9102688FB6300E25FC2 /* popup.html */,
+				B132D9122688FB6300E25FC2 /* popup.css */,
+				B132D9142688FB6300E25FC2 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B132D8EB2688FB3800E25FC2 /* OpenInApollo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B132D8FA2688FB3A00E25FC2 /* Build configuration list for PBXNativeTarget "OpenInApollo" */;
+			buildPhases = (
+				B132D8E82688FB3800E25FC2 /* Sources */,
+				B132D8E92688FB3800E25FC2 /* Frameworks */,
+				B132D8EA2688FB3800E25FC2 /* Resources */,
+				B132D91D2688FB6300E25FC2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B132D9182688FB6300E25FC2 /* PBXTargetDependency */,
+			);
+			name = OpenInApollo;
+			productName = OpenInApollo;
+			productReference = B132D8EC2688FB3800E25FC2 /* OpenInApollo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B132D9002688FB6300E25FC2 /* OpenInApolloWebExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B132D91A2688FB6300E25FC2 /* Build configuration list for PBXNativeTarget "OpenInApolloWebExt" */;
+			buildPhases = (
+				B132D8FD2688FB6300E25FC2 /* Sources */,
+				B132D8FE2688FB6300E25FC2 /* Frameworks */,
+				B132D8FF2688FB6300E25FC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenInApolloWebExt;
+			productName = OpenInApolloWebExt;
+			productReference = B132D9012688FB6300E25FC2 /* OpenInApolloWebExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B132D8E42688FB3800E25FC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					B132D8EB2688FB3800E25FC2 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					B132D9002688FB6300E25FC2 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = B132D8E72688FB3800E25FC2 /* Build configuration list for PBXProject "OpenInApollo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B132D8E32688FB3800E25FC2;
+			productRefGroup = B132D8ED2688FB3800E25FC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B132D8EB2688FB3800E25FC2 /* OpenInApollo */,
+				B132D9002688FB6300E25FC2 /* OpenInApolloWebExt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B132D8EA2688FB3800E25FC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B132D8F72688FB3A00E25FC2 /* Preview Assets.xcassets in Resources */,
+				B132D8F42688FB3A00E25FC2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B132D8FF2688FB6300E25FC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B132D9132688FB6300E25FC2 /* popup.css in Resources */,
+				B132D9112688FB6300E25FC2 /* popup.html in Resources */,
+				B132D9092688FB6300E25FC2 /* images in Resources */,
+				B132D90B2688FB6300E25FC2 /* manifest.json in Resources */,
+				B132D9072688FB6300E25FC2 /* _locales in Resources */,
+				B132D90F2688FB6300E25FC2 /* content.js in Resources */,
+				B132D9152688FB6300E25FC2 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B132D8E82688FB3800E25FC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B132D8F22688FB3800E25FC2 /* ContentView.swift in Sources */,
+				B132D8F02688FB3800E25FC2 /* OpenInApolloApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B132D8FD2688FB6300E25FC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B132D9042688FB6300E25FC2 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B132D9182688FB6300E25FC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B132D9002688FB6300E25FC2 /* OpenInApolloWebExt */;
+			targetProxy = B132D9172688FB6300E25FC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B132D8F82688FB3A00E25FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B132D8F92688FB3A00E25FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B132D8FB2688FB3A00E25FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OpenInApollo/Preview Content\"";
+				DEVELOPMENT_TEAM = DBRBUWSJR6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.OpenInApollo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B132D8FC2688FB3A00E25FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OpenInApollo/Preview Content\"";
+				DEVELOPMENT_TEAM = DBRBUWSJR6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.OpenInApollo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B132D91B2688FB6300E25FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DBRBUWSJR6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenInApolloWebExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OpenInApolloWebExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.OpenInApollo.OpenInApolloWebExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B132D91C2688FB6300E25FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DBRBUWSJR6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenInApolloWebExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OpenInApolloWebExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.OpenInApollo.OpenInApolloWebExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B132D8E72688FB3800E25FC2 /* Build configuration list for PBXProject "OpenInApollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B132D8F82688FB3A00E25FC2 /* Debug */,
+				B132D8F92688FB3A00E25FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B132D8FA2688FB3A00E25FC2 /* Build configuration list for PBXNativeTarget "OpenInApollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B132D8FB2688FB3A00E25FC2 /* Debug */,
+				B132D8FC2688FB3A00E25FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B132D91A2688FB6300E25FC2 /* Build configuration list for PBXNativeTarget "OpenInApolloWebExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B132D91B2688FB6300E25FC2 /* Debug */,
+				B132D91C2688FB6300E25FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B132D8E42688FB3800E25FC2 /* Project object */;
+}
